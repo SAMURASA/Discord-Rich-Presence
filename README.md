@@ -15,7 +15,7 @@ So we are connected, it remains to fill in the fields
 <br>
 **largeimg** - Here we specify a link to a gif or image
 <br>
-Example: https://media1.tenor.com/m/9QJC27qGEJcAAAAC/hi-silly.gif or "C:/Users/Username/Downloads/mypic.jpg"
+Example: https://media1.tenor.com/m/9QJC27qGEJcAAAAC/hi-silly.gif
 <br>
 **largetext** - Text when hovering over an image
 <br>
