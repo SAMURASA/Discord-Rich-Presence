@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    
+
+    <table>
+        <td><h1>Timestamp</h1></td>
+        <td class="checkbox"></td>
+    </table>
+
+
+    <script>
+        window.$ = window.jQuery = require('jquery');
+        //alert(localStorage.getItem("checkboxchecked"))
+
+        if( localStorage.getItem("checkboxchecked") === "1"){
+            $(".checkbox").html(`<input type="checkbox" id="checkbox" checked>`)
+        }else{
+            $(".checkbox").html(`<input type="checkbox" id="checkbox">`)
+        }
+
+        $('#checkbox').click(function(){
+           if($(this).is(":checked")){
+            localStorage.setItem("checkboxchecked", "1")
+           }else{
+            localStorage.setItem("checkboxchecked", "0")
+           }
+        })
+    	    
+    </script>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: aliceblue;
+        }
+    </style>
+</body>
+</html>
